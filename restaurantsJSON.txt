@@ -1,0 +1,492 @@
+{
+    "nombre": "Katsumi Sushi",
+    "calle": "Plaça d'Espanya 18",
+    "especialidad": "Japonesa",
+    "coordenadas": "41.54464720858636, 2.4416859615824085"
+  },
+  {
+    "nombre": "Il Colosseo Trattoria Italiana",
+    "calle": "Esteve Albert 77",
+    "especialidad": "Italiana",
+    "coordenadas": "41.54593024438207, 2.4365111670620565"
+  },
+  {
+    "nombre": "Sèsam Negre",
+    "calle": "Rambla 40",
+    "especialidad": "Japonesa",
+    "coordenadas": "41.537135125747554, 2.443674134596929"
+  },
+  {
+    "nombre": "Lumber Restaurant",
+    "calle": "Cuba 19",
+    "especialidad": "Americana",
+    "coordenadas": "41.53714750357814, 2.441086024733921"
+  },
+  {
+    "nombre": "Su. Cocina Japonesa",
+    "calle": "Pujol 6",
+    "especialidad": "Japonesa",
+    "coordenadas": "41.5392884295936, 2.445284795897865"
+  },
+  {
+    "nombre": "Ca La Ceci",
+    "calle": "Avinguda del Maresme 327",
+    "especialidad": "Peruana",
+    "coordenadas": "41.53710342616571, 2.4495552958977345"
+  },
+  {
+    "nombre": "La Pentola",
+    "calle": "Pujol 27",
+    "especialidad": "Italiana",
+    "coordenadas": "41.5396125426612, 2.4458779093893295"
+  },
+  {
+    "nombre": "Leks Thai",
+    "calle": "Avinguda del Maresme 247",
+    "especialidad": "Tailandesa",
+    "coordenadas": "41.53510316172104, 2.4467790958976243"
+  },
+  {
+    "nombre": "Taller de Pizzes Matarò",
+    "calle": "Plaça de les Tereses",
+    "especialidad": "Italiana",
+    "coordenadas": "41.53836814606081, 2.442328938225434"
+  },
+  {
+    "nombre": "La Cuina del Cel",
+    "calle": "Sant Francesc d'Assís 7",
+    "especialidad": "Catalana",
+    "coordenadas": "41.54173956711455, 2.4461042382256295"
+  },
+  {
+    "nombre": "Roma Bella",
+    "calle": "Barcelona 24",
+    "especialidad": "Italiana",
+    "coordenadas": "41.53877101772313, 2.4457867345974798"
+  },
+  {
+    "nombre": "Breton Creperie",
+    "calle": "Pujol 47",
+    "especialidad": "Francesa",
+    "coordenadas": "41.53966888146739, 2.446585367061709"
+  },
+ {
+    "nombre": "Som Terra Restaurant",
+    "calle": "Avinguda del Maresme 259",
+    "especialidad": "Catalana",
+    "coordenadas": "41.535338692221444, 2.4470666382252495"
+  },
+  {
+    "nombre": "Dem DIk",
+    "calle": "Churruca 57",
+    "especialidad": "Africana",
+    "coordenadas": "41.53432132593146, 2.444637838225209"
+  },
+  {
+    "nombre": "Bar Europa",
+    "calle": "Camí Ral de la Mercè 468",
+    "especialidad": "Catalana",
+    "coordenadas": "41.53603315952693, 2.442483724733865"
+  }
+{
+    "nombre": "Mueta",
+    "calle": "Via Europa 17",
+    "especialidad": "Italiana",
+    "coordenadas": "41.54146870729321, 2.4347118382256325"
+  },
+  {
+    "nombre": "Ohana Manos Japonesas",
+    "calle": "Sant Benet 5",
+    "especialidad": "Japonesa",
+    "coordenadas": "41.53862071472015, 2.441257624733986"
+  },
+  {
+    "nombre": "Villanueva",
+    "calle": "Jaume I 69",
+    "especialidad": "Catalana",
+    "coordenadas": "41.53728965656242, 2.4235712382253842"
+  },
+  {
+    "nombre": "El Quiosc de Can Carreras",
+    "calle": "Cuba 22",
+    "especialidad": "Americana",
+    "coordenadas": "41.53768187106671, 2.439798851716858"
+  },
+  {
+    "nombre": "Restaurante Tokyo to",
+    "calle": "Camí Ral de la Mercè 600",
+    "especialidad": "Japonesa",
+    "coordenadas": "41.5332504660919, 2.4388760670613268"
+  },
+  {
+    "nombre": "La Morera",
+    "calle": "Avinguda del Maresme 507",
+    "especialidad": "Catalana",
+    "coordenadas": "41.540939808672526, 2.4555642382256084"
+  },
+  {
+    "nombre": "Roti - Indian Kitchen",
+    "calle": "Cuba 59",
+    "especialidad": "Hindú",
+    "coordenadas": "41.53652672873163, 2.4419799769242956"
+  },
+  {
+    "nombre": "Worldburg",
+    "calle": "Ronda dels Països Catalans 35",
+    "especialidad": "Americana",
+    "coordenadas": "41.55435761628667, 2.439695167062555"
+  },
+  {
+    "nombre": "Peix & Chips",
+    "calle": "Cuba 50",
+    "especialidad": "Catalana",
+    "coordenadas": "41.53729451062742, 2.4405324958977372"
+  },
+  {
+    "nombre": "LeBoel",
+    "calle": "Barcelona 19",
+    "especialidad": "Italiana",
+    "coordenadas": "41.53880765298093, 2.4457449824063815"
+  },
+  {
+    "nombre": "Dolce Vita",
+    "calle": "Port de Mataró Local",
+    "especialidad": "Italiana",
+    "coordenadas": "41.53219425336816, 2.446834513542146"
+  },
+  {
+    "nombre": "Piazza Italia",
+    "calle": "Via Europa 45",
+    "especialidad": "Italiana",
+    "coordenadas": "41.54302471513448, 2.433063180553343"
+  },
+  {
+    "nombre": "Bunker Mataro",
+    "calle": "Sant Benet 19",
+    "especialidad": "Catalana",
+    "coordenadas": "41.53853261494995, 2.4407813382254706"
+  },
+  {
+    "nombre": "Bululú Beach Mataró",
+    "calle": "Passeig del Callao",
+    "especialidad": "Mexicana",
+    "coordenadas": "41.53740877948377, 2.4513349958977257"
+  },
+  {
+    "nombre": "La Lluna",
+    "calle": "Cuba 92",
+    "especialidad": "Italiana",
+    "coordenadas": "41.53643301319498, 2.4415900382253644"
+  },
+  {
+    "nombre": "Gelatiamo Mataró Parc",
+    "calle": "Estrasburg 5",
+    "especialidad": "Italiana",
+    "coordenadas": "41.554777443937844, 2.433533795898745"
+  }
+  {
+    "nombre": "Pizzeria La Piccola",
+    "calle": "Torrent 1",
+    "especialidad": "Italiana",
+    "coordenadas": "41.54067341818605, 2.440359724734154"
+  },
+  {
+    "nombre": "Sport House",
+    "calle": "Llauder 138",
+    "especialidad": "Americana",
+    "coordenadas": "41.533215634855175, 2.437747880552781"
+  },
+  {
+    "nombre": "Hapo Mataró",
+    "calle": "Consol Nogueras 1",
+    "especialidad": "Japonesa",
+    "coordenadas": "41.54425695992392, 2.4359413535705174"
+  },
+  {
+    "nombre": "Frankfurt's",
+    "calle": "La Riera 50",
+    "especialidad": "Americana",
+    "coordenadas": "41.54012141688526, 2.444735805761813"
+  },
+  {
+    "nombre": "Chipotlin",
+    "calle": "Solís 1",
+    "especialidad": "Mexicana",
+    "coordenadas": "41.54115164745028, 2.4510308958979476"
+  },
+  {
+    "nombre": "Restaurant Caliu",
+    "calle": "Via Europa 26",
+    "especialidad": "Catalana",
+    "coordenadas": "41.54163429769361, 2.4356969535703543"
+  },
+  {
+    "nombre": "Pizzeria Lluis",
+    "calle": "Baixada Escaletes 2",
+    "especialidad": "Italiana",
+    "coordenadas": "41.53903934422724, 2.4471524093893096"
+  },
+  {
+    "nombre": "Granja Caralt",
+    "calle": "La Riera 91",
+    "especialidad": "Catalana",
+    "coordenadas": "41.54095580863068, 2.4440770670617726"
+  },
+  {
+    "nombre": "Nou Daxana",
+    "calle": "Jaume Balmes 35",
+    "especialidad": "Catalana",
+    "coordenadas": "41.53613649024019, 2.4472060535700466"
+  },
+  {
+    "nombre": "Bàltic",
+    "calle": "Dinamarca 32",
+    "especialidad": "Americana",
+    "coordenadas": "41.54612798429978, 2.430001095898259"
+  },
+  {
+    "nombre": "Dolç & Salat",
+    "calle": "Ronda President Macià 18",
+    "especialidad": "Catalana",
+    "coordenadas": "41.533717268524995, 2.437835680552798"
+  },
+  {
+    "nombre": "Restaurante Asiatico Sheng",
+    "calle": "Via Europa 45",
+    "especialidad": "Xinesa",
+    "coordenadas": "41.542888203591204, 2.433084638225704"
+  },
+  {
+    "nombre": "Parrilla Argentina Bariloche Fusión",
+    "calle": "Ronda Mossèn Jacint Verdaguer 31",
+    "especialidad": "Argentina",
+    "coordenadas": "41.54386303104852, 2.4357107247343075"
+  },
+  {
+    "nombre": "Dulce Bakery",
+    "calle": "Iluro 42",
+    "especialidad": "Americana",
+    "coordenadas": "41.53689828094192, 2.439746282406275"
+  },
+  {
+    "nombre": "Espressione Mataro",
+    "calle": "Alemanya 50",
+    "especialidad": "Argentina",
+    "coordenadas": "41.54486946483929, 2.4304387769272773"
+  },
+  {
+    "nombre": "Arepados Mataró",
+    "calle": "Camí Ral de la Mercè 50",
+    "especialidad": "Veneçolana",
+    "coordenadas": "41.53518895474587, 2.441372480552906"
+  },
+  {
+    "nombre": "Restaurante Macgyver",
+    "calle": "Ronda Creu de Pedra 25",
+    "especialidad": "Catalana",
+    "coordenadas": "41.55492913734824, 2.445897176930784"
+  },
+  {
+    "nombre": "Restaurant Oliva",
+    "calle": "Plaça de la Muralla 5",
+    "especialidad": "Catalana",
+    "coordenadas": "41.539430090418996, 2.4481656382255053"
+  },
+  {
+    "nombre": "Nova Rosaleda",
+    "calle": "Altafulla 32",
+    "especialidad": "Catalana",
+    "coordenadas": "41.53945151255366, 2.4390968535702324"
+  },
+  {
+    "nombre": "El Raco de Jabugo",
+    "calle": "La Rambla 20",
+    "especialidad": "Catalana",
+    "coordenadas": "41.537665448179965, 2.4439348228806472"
+  },
+  {
+    "nombre": "Espai culinari Cafè de Mar",
+    "calle": "Santa Rita 1",
+    "especialidad": "Catalana",
+    "coordenadas": "41.53575502007947, 2.447354080552949"
+  },
+  {
+    "nombre": "El Pirata",
+    "calle": "Port de Mataró 8",
+    "especialidad": "Catalana",
+    "coordenadas": "41.5309262612138, 2.4449362958973393"
+  },
+  {
+    "nombre": "Otto Sport Bar",
+    "calle": "Ronda Frederic Mistral 14",
+    "especialidad": "Alemanya",
+    "coordenadas": "41.55106676957816, 2.4390659958985474"
+  },
+  {
+    "nombre": "Twister",
+    "calle": "Ronda Mossèn Jacint Verdaguer 73",
+    "especialidad": "Catalana",
+    "coordenadas": "41.54514647456461, 2.437272405763572"
+  },
+  {
+    "nombre": "El Fanalet",
+    "calle": "Sant Cristòfor, 15",
+    "especialidad": "Italiana",
+    "coordenadas": "41.53944750421106, 2.447086095897898"
+  },
+  {
+    "nombre": "La Taula de Mataro",
+    "calle": "Na Pau 5",
+    "especialidad": "Italiana",
+    "coordenadas": "41.54017486512463, 2.447023905761776"
+  },
+  {
+    "nombre": "Nambu Tekki",
+    "calle": "El Torrent 49",
+    "especialidad": "Catalana",
+    "coordenadas": "41.539356243361425, 2.4417596805531447"
+  },
+  {
+    "nombre": "MásQMenos",
+    "calle": "Plaça de Santa Anna 6",
+    "especialidad": "Catalana",
+    "coordenadas": "41.53844272141184, 2.4445503535701727"
+  },
+  {
+    "nombre": "Rustik",
+    "calle": "Port de Mataró",
+    "especialidad": "Catalana",
+    "coordenadas": "41.53101425574082, 2.4449785805526436"
+  },
+  {
+    "nombre": "Classic Coffee",
+    "calle": "Plaça de Santa Anna 5",
+    "especialidad": "Catalana",
+    "coordenadas": "41.538446144156936, 2.4445080535701553"
+  },
+  {
+    "nombre": "El Montadito Del Centre",
+    "calle": "La Rambla 24",
+    "especialidad": "Catalana",
+    "coordenadas": "41.53754512559153, 2.443928638225382"
+  }
+  {
+    "nombre": "Restaurant Auto d'Ara",
+    "calle": "Avinguda de Cabrera 36",
+    "especialidad": "Catalana",
+    "coordenadas": "41.52361052134397, 2.4280699958969367"
+  },
+  {
+    "nombre": "Yokki",
+    "calle": "Ronda del President Irla 28",
+    "especialidad": "Japonesa",
+    "coordenadas": "41.53195592564781, 2.439545022880373"
+  },
+  {
+    "nombre": "El Doge Pizzeria Ristorante",
+    "calle": "Passeig Marítim 250",
+    "especialidad": "Italiana",
+    "coordenadas": "41.54122102317959, 2.458249019253706"
+  },
+  {
+    "nombre": "Kristal Serfran",
+    "calle": "Pablo Iglesias 36",
+    "especialidad": "Americana",
+    "coordenadas": "41.53384159593934, 2.4305239958975458"
+  },
+  {
+    "nombre": "Ke D Ke",
+    "calle": "Ronda Mossèn Jacint Verdaguer 55",
+    "especialidad": "Catalana",
+    "coordenadas": "41.54458130580683, 2.4366386922719068"
+  },
+  {
+    "nombre": "Frankfurt La Canica Azul",
+    "calle": "Ronda Mossèn Jacint Verdaguer 43",
+    "especialidad": "Americana",
+    "coordenadas": "41.55397119487552, 2.40100729465889"
+  },
+  {
+    "nombre": "Alsus",
+    "calle": "Ronda Països Catalans 86",
+    "especialidad": "Catalana",
+    "coordenadas": "41.55475653782008, 2.4418767480945114"
+  },
+  {
+    "nombre": "Restaurant Yami",
+    "calle": "Camí Ral de la Mercè",
+    "especialidad": "Japonesa",
+    "coordenadas": "41.53518895474587, 2.4414046670614464"
+  },
+  {
+    "nombre": "Braseria Alamo",
+    "calle": "Energia 50",
+    "especialidad": "Catalana",
+    "coordenadas": "41.554982514811726, 2.4500655400796565"
+  },
+  {
+    "nombre": "Restaurant Scorpio",
+    "calle": "Ronda Sant Oleguer 25",
+    "especialidad": "Italiana",
+    "coordenadas": "41.55166938068827, 2.4423778112432926"
+  },
+  {
+    "nombre": "Alla Vitta Veloce",
+    "calle": "Pizzeria Alemanya 33",
+    "especialidad": "Italiana",
+    "coordenadas": "41.54492983853537, 2.4308996824067117"
+  },
+  {
+    "nombre": "Sesam Negre Expres",
+    "calle": "Via Europa 83",
+    "especialidad": "Japonesa",
+    "coordenadas": "41.54398197731273, 2.432272948090816"
+  },
+  {
+    "nombre": "Birrateka",
+    "calle": "Avinguda del Maresme 347",
+    "especialidad": "Catalana",
+    "coordenadas": "41.53751127919101, 2.4500923093891918"
+  },
+  {
+    "nombre": "RedCup Mataró",
+    "calle": "Batista i Roca 63",
+    "especialidad": "Mexicana",
+    "coordenadas": "41.53233567396886, 2.423961438225085"
+  },
+  {
+    "nombre": "Pizzeria Carlos Mataró",
+    "calle": "Alemanya 1",
+    "especialidad": "Italiana",
+    "coordenadas": "41.54655034158848, 2.4313809904193517"
+  }
+  {
+    "nombre": "Mestolo",
+    "calle": "Ronda Barceló 2",
+    "especialidad": "Italiana",
+    "coordenadas": "41.534050964203416,2.440560495897554"
+  },
+  {
+    "nombre": "Rosita",
+    "calle": "Plaça Santa Anna",
+    "especialidad": "Catalana",
+    "coordenadas": "41.538121476352245,2.4447740247339658"
+  },
+  {
+    "nombre": "Atlantida",
+    "calle": "Estrasburg 5",
+    "especialidad": "Italiana",
+    "coordenadas": "41.554777443937844,2.433533795898745"
+  },
+  {
+    "nombre": "Pizzeria Catània",
+    "calle": "Sant Isidor 78",
+    "especialidad": "Italiana",
+    "coordenadas": "41.54347796214908,2.439684024734263"
+  },
+  {
+    "nombre": "Omnia Cafe-Bar",
+    "calle": "Palmerola 4",
+    "especialidad": "Catalana",
+    "coordenadas": "41.53860711852714,2.4414085192527155"
+  }
