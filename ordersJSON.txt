@@ -1,4 +1,4 @@
-    {"id": 1, "especialitat": "Italiana", "carrer": "La Riera 89", "coordenades": "41.5409672844944, 2.4440583102421027"},
+{"id": 1, "especialitat": "Italiana", "carrer": "La Riera 89", "coordenades": "41.5409672844944, 2.4440583102421027"},
     {"id": 2, "especialitat": "Japonesa", "carrer": "Sant Benet 8", "coordenades": "41.538726781416834, 2.4409684054212284"},
     {"id": 3, "especialitat": "Peruana", "carrer": "Plaça de Cuba 17", "coordenades": "41.5373334545074, 2.4412580840017153"},
     {"id": 4, "especialitat": "Americana", "carrer": "Alarona 2", "coordenades": "41.536241682816986, 2.433675182406231"},
