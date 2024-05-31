@@ -26,35 +26,31 @@ for order in orders:
 def calculate_distance(coord1, coord2):
     return geodesic(coord1, coord2).kilometers
 
-# Coordenades de la seu
-hub_coordinates = (41.528154350078815, 2.4346229558256196)
-
-for restaurant in restaurants:
+for index, restaurant in enumerate(restaurants):
     restaurant['coordenades'] = tuple(map(float, restaurant['coordenades'].split(", ")))
+    restaurant['id'] = index
 
 # Calcular totes les distàncies entre la seu i els restaurants, i entre restaurants
 def calculate_all_distances(hub, locations):
     distances = {}
     for loc1 in locations:
-        coord1 = loc1["coordenades"]
-        distances[(hub, loc1["id"])] = calculate_distance(hub, coord1)
+        store_distance(distances, hub, loc1)
         for loc2 in locations:
             if loc1 != loc2:
-                coord2 = loc2["coordenades"]
-                distances[(loc1["id"], loc2["id"])] = calculate_distance(coord1, coord2)
+                store_distance(distances, loc1, loc2)
     return distances
 
-restaurant_distances = calculate_all_distances(hub_coordinates, restaurants)
-
 # Algoritme TSP per determinar l'ordre de visita dels restaurants
-def tsp(locations, start):
+def tsp(locations: list, restaurant_distances: dict):
+    start = locations[0] # Seu
+    locations.pop(0) # Eliminar la seu de la llista de restaurants
     n = len(locations)
     all_points = list(range(n))
     memo = {}
 
     def visit(visited, last):
         if visited == (1 << n) - 1:
-            return restaurant_distances[(locations[last]["id"], start)]
+            return get_distance(restaurant_distances, locations[last], start)
 
         if (visited, last) in memo:
             return memo[(visited, last)]
@@ -62,7 +58,7 @@ def tsp(locations, start):
         min_dist = float('inf')
         for point in all_points:
             if visited & (1 << point) == 0:
-                dist = restaurant_distances[(locations[last]["id"], locations[point]["id"])] + visit(visited | (1 << point), point)
+                dist = get_distance(restaurant_distances, locations[last], locations[point])
                 min_dist = min(min_dist, dist)
 
         memo[(visited, last)] = min_dist
@@ -70,8 +66,6 @@ def tsp(locations, start):
 
     return visit(1, 0)
 
-# Determinar l'ordre de visita dels restaurants
-restaurant_order = tsp(restaurants, hub_coordinates)
 
 # Definir la capacitat màxima de la motxilla
 max_capacity = 10  # Exemple, pots ajustar-ho segons la capacitat real
@@ -91,16 +85,37 @@ def knapsack(orders, max_capacity):
     
     return selected_orders
 
-# Seleccionar les comandes per cada restaurant
-orders_by_restaurant = {}
-for order in orders:
-    for restaurant in restaurants:
-        if order['especialitat'] == restaurant['especialitat']:
-            if restaurant['id'] not in orders_by_restaurant:
-                orders_by_restaurant[restaurant['id']] = []
-            orders_by_restaurant[restaurant['id']].append(order)
-            break
+def select_orders_by_restaurant(restaurants, orders):
+    # Seleccionar les comandes per cada restaurant
+    orders_by_restaurant = {}
+    for order in orders:
+        for restaurant in restaurants:
+            if order['especialitat'] == restaurant['especialitat']:
+                if restaurant['id'] not in orders_by_restaurant:
+                    orders_by_restaurant[restaurant['id']] = []
+                orders_by_restaurant[restaurant['id']].append(order)
+                break
+    return orders_by_restaurant
 
-selected_orders_by_restaurant = {}
-for restaurant_id, orders in orders_by_restaurant.items():
-    selected_orders_by_restaurant[restaurant_id] = knapsack(orders, max_capacity)
+def store_distance(distances: dict, loc1, loc2):
+    coord1 = loc1["coordenades"]
+    coord2 = loc2["coordenades"]
+    distances[(coord1, coord2)] = calculate_distance(coord1, coord2)
+    distances[(coord2, coord1)] = distances[(coord1, coord2)]
+    return distances
+
+def get_distance(distances: dict, loc1, loc2):
+    coord1 = loc1["coordenades"]
+    coord2 = loc2["coordenades"]
+    return distances[(coord1, coord2)]
+
+if __name__ == "__main__":
+    # Determinar l'ordre de visita dels restaurants
+    restaurant_distances = calculate_all_distances(restaurants[0], restaurants)
+    restaurant_order = tsp(restaurants, restaurant_distances)
+
+    orders_by_restaurant = select_orders_by_restaurant(restaurants, orders)
+
+    selected_orders_by_restaurant = {}
+    for restaurant_id, orders in orders_by_restaurant.items():
+        selected_orders_by_restaurant[restaurant_id] = knapsack(orders, max_capacity)

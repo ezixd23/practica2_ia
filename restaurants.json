@@ -1,6 +1,12 @@
 {
   "restaurants" : [
-    {
+      {
+        "nom": "START",
+        "carrer": "-",
+        "especialitat": "-",
+        "coordenades": "41.54464720858636, 2.4416859615824085"
+      },
+      {
         "nom": "Katsumi Sushi",
         "carrer": "Plaça d'Espanya 18",
         "especialitat": "Japonesa",
@@ -466,31 +472,31 @@
         "nom": "Mestolo",
         "carrer": "Ronda Barceló 2",
         "especialitat": "Italiana",
-        "coordenades": "41.534050964203416,2.440560495897554"
+        "coordenades": "41.534050964203416, 2.440560495897554"
       },
       {
         "nom": "Rosita",
         "carrer": "Plaça Santa Anna",
         "especialitat": "Catalana",
-        "coordenades": "41.538121476352245,2.4447740247339658"
+        "coordenades": "41.538121476352245, 2.4447740247339658"
       },
       {
         "nom": "Atlantida",
         "carrer": "Estrasburg 5",
         "especialitat": "Italiana",
-        "coordenades": "41.554777443937844,2.433533795898745"
+        "coordenades": "41.554777443937844, 2.433533795898745"
       },
       {
         "nom": "Pizzeria Catània",
         "carrer": "Sant Isidor 78",
         "especialitat": "Italiana",
-        "coordenades": "41.54347796214908,2.439684024734263"
+        "coordenades": "41.54347796214908, 2.439684024734263"
       },
       {
         "nom": "Omnia Cafe-Bar",
         "carrer": "Palmerola 4",
         "especialitat": "Catalana",
-        "coordenades": "41.53860711852714,2.4414085192527155"
+        "coordenades": "41.53860711852714, 2.4414085192527155"
     }
   ]
 }
