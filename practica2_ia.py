@@ -2,14 +2,14 @@ import json
 from itertools import permutations
 from geopy.distance import geodesic
 
-with open('/restaurants.json', 'r') as file:
-    restaurants = json.load(file)
+with open('restaurants.json', 'r') as file:
+    restaurants = json.load(file)['restaurants']
 
-with open('/orders.json', 'r') as file:
-    orders = json.load(file)
+with open('orders.json', 'r') as file:
+    orders = json.load(file)['orders']
 
-with open('/specialities.json', 'r') as file:
-    specialities = json.load(file)
+with open('specialities.json', 'r') as file:
+    specialities = json.load(file)['specialities']
 
 
 
