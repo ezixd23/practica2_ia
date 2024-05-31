@@ -2,18 +2,14 @@ import json
 from itertools import permutations
 from geopy.distance import geodesic
 
-with open('restaurants.json', 'r') as file:
-    restaurants = json.load(file)['restaurants']
+def load_json_array(filename):
+    with open(str(filename) + '.json', 'r') as file:
+        return json.load(file)[filename]
 
-with open('orders.json', 'r') as file:
-    orders = json.load(file)['orders']
+restaurants = load_json_array('restaurants')
+orders = load_json_array('orders')
+specialities = load_json_array('specialities')
 
-with open('specialities.json', 'r') as file:
-    specialities = json.load(file)['specialities']
-
-
-
-# Crear un diccionari per accedir ràpidament a les dades de les especialitats
 specialities_dict = {s['especialitat']: s for s in specialities}
 
 # Afegir les dades de compromís i pes a les comandes
@@ -119,3 +115,5 @@ if __name__ == "__main__":
     selected_orders_by_restaurant = {}
     for restaurant_id, orders in orders_by_restaurant.items():
         selected_orders_by_restaurant[restaurant_id] = knapsack(orders, max_capacity)
+
+    print(selected_orders_by_restaurant)
