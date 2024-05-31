@@ -18,9 +18,6 @@ for order in orders:
     order['compromis'] = specialities_dict[especialitat]['compromis']
     order['pes'] = specialities_dict[especialitat]['pes']
 
-# Funció per calcular la distància entre dos punts
-def calculate_distance(coord1, coord2):
-    return geodesic(coord1, coord2).kilometers
 
 for index, restaurant in enumerate(restaurants):
     restaurant['coordenades'] = tuple(map(float, restaurant['coordenades'].split(", ")))
@@ -92,6 +89,10 @@ def select_orders_by_restaurant(restaurants, orders):
                 orders_by_restaurant[restaurant['id']].append(order)
                 break
     return orders_by_restaurant
+
+# Funció per calcular la distància entre dos punts
+def calculate_distance(coord1, coord2):
+    return geodesic(coord1, coord2).kilometers
 
 def store_distance(distances: dict, loc1, loc2):
     coord1 = loc1["coordenades"]
