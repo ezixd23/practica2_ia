@@ -110,5 +110,8 @@ if __name__ == "__main__":
     restaurant_order = tsp(restaurants, restaurant_distances)
 
     orders_by_restaurant = select_orders_by_restaurant(restaurants, knapsack(orders))
-
-    print(orders_by_restaurant)
+    for restaurant_id, orders in orders_by_restaurant.items():
+        restaurant_name = restaurants[restaurant_id]['nom']
+        print(f"Restaurante: {restaurant_name}")
+        for order in orders:
+            print(f"Comanda: {order['especialitat']}")
