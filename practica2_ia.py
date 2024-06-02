@@ -61,7 +61,7 @@ def tsp(locations: list, restaurant_distances: dict):
 
 
 # Definir la capacitat màxima de la motxilla
-max_capacity = 10  # Exemple, pots ajustar-ho segons la capacitat real
+max_capacity = 12000  # Exemple, pots ajustar-ho segons la capacitat real
 
 # Funció per seleccionar les comandes segons el problema de la motxilla
 def knapsack(orders, max_capacity):
