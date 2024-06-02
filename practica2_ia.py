@@ -60,11 +60,9 @@ def tsp(locations: list, restaurant_distances: dict):
     return visit(1, 0)
 
 
-# Definir la capacitat màxima de la motxilla
-max_capacity = 12000  # Exemple, pots ajustar-ho segons la capacitat real
 
 # Funció per seleccionar les comandes segons el problema de la motxilla
-def knapsack(orders, max_capacity):
+def knapsack(orders):
     # Ordenar les comandes per temps de compromís (més curts primer)
     orders = sorted(orders, key=lambda x: x['compromis'])
     
@@ -72,7 +70,7 @@ def knapsack(orders, max_capacity):
     total_weight = 0
     
     for order in orders:
-        if total_weight + order['pes'] <= max_capacity:
+        if total_weight + order['pes'] <= 12000:
             selected_orders.append(order)
             total_weight += order['pes']
     
@@ -111,10 +109,6 @@ if __name__ == "__main__":
     restaurant_distances = calculate_all_distances(restaurants[0], restaurants)
     restaurant_order = tsp(restaurants, restaurant_distances)
 
-    orders_by_restaurant = select_orders_by_restaurant(restaurants, orders)
+    orders_by_restaurant = select_orders_by_restaurant(restaurants, knapsack(orders))
 
-    selected_orders_by_restaurant = {}
-    for restaurant_id, orders in orders_by_restaurant.items():
-        selected_orders_by_restaurant[restaurant_id] = knapsack(orders, max_capacity)
-
-    print(selected_orders_by_restaurant)
+    print(orders_by_restaurant)
