@@ -131,6 +131,28 @@ def get_distance(distances: dict, loc1, loc2):
     coord2 = loc2["coordenades"]
     return distances[(coord1, coord2)]
 
+def plot_tsp_route(restaurants, route):
+    import matplotlib.pyplot as plt
+    plt.figure(figsize=(10, 6))
+    x_coords = [restaurant['coordenades'][0] for restaurant in restaurants]
+    y_coords = [restaurant['coordenades'][1] for restaurant in restaurants]
+    plt.scatter(x_coords, y_coords, color='blue')
+
+
+    for i, restaurant in enumerate(restaurants):
+        plt.text(restaurant['coordenades'][0], restaurant['coordenades'][1], f"{i}: {restaurant['nom']}")
+
+    route_coords = [restaurant['coordenades'] for restaurant in route]
+    route_x = [coord[0] for coord in route_coords]
+    route_y = [coord[1] for coord in route_coords]
+
+    plt.plot(route_x, route_y, color='red', linestyle='-', marker='o')
+    plt.title("TSP Route")
+    plt.xlabel("X Coordinate")
+    plt.ylabel("Y Coordinate")
+    plt.grid(True)
+    plt.show()
+
 if __name__ == "__main__":
     # Determinar l'ordre de visita dels restaurants
     restaurant_distances = calculate_all_distances(restaurants[0], restaurants)
@@ -153,6 +175,8 @@ if __name__ == "__main__":
 
     for restaurant in restaurant_order:
         print(restaurant['nom'])
+
+    plot_tsp_route(selected_restaurants, restaurant_order)
 
 
     
