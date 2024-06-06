@@ -60,6 +60,33 @@ def tsp(locations: list, restaurant_distances: dict):
     return visit(1, 0)
 
 
+def tsp2(locations: list, restaurant_distances: dict):
+    start = locations[0]
+    current = start
+    visited = [start]
+    unvisited = locations[1:]
+
+    total_distance = 0
+
+    while unvisited:
+        min_dist = float('inf')
+        min_loc = None
+
+        for loc in unvisited:
+            dist = get_distance(restaurant_distances, current, loc)
+            if dist < min_dist:
+                min_dist = dist
+                min_loc = loc
+
+        total_distance += min_dist
+
+        visited.append(min_loc)
+        unvisited.remove(min_loc)
+        current = min_loc
+
+    print("Distance: " + str(total_distance))
+    return visited
+
 
 # Funció per seleccionar les comandes segons el problema de la motxilla
 def knapsack(orders):
@@ -107,11 +134,25 @@ def get_distance(distances: dict, loc1, loc2):
 if __name__ == "__main__":
     # Determinar l'ordre de visita dels restaurants
     restaurant_distances = calculate_all_distances(restaurants[0], restaurants)
-    restaurant_order = tsp(restaurants, restaurant_distances)
-
     orders_by_restaurant = select_orders_by_restaurant(restaurants, knapsack(orders))
+
+    selected_restaurants = []
+    for restaurant_id in orders_by_restaurant.keys():
+        selected_restaurants.append(restaurants[restaurant_id])
+
+    restaurant_order = tsp2(selected_restaurants, restaurant_distances)
+
+    print()
+    print()
+    print("Comandes seleccionades:")
     for restaurant_id, orders in orders_by_restaurant.items():
         restaurant_name = restaurants[restaurant_id]['nom']
         print(f"Restaurante: {restaurant_name}")
         for order in orders:
-            print(f"Comanda: {order['especialitat']}")
+            print(f"    Comanda: {order['especialitat']}")
+
+    for restaurant in restaurant_order:
+        print(restaurant['nom'])
+
+
+    
