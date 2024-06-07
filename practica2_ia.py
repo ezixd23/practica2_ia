@@ -38,33 +38,6 @@ def calculate_all_distances(hub, locations):
                 store_distance(distances, loc1, loc2)
     return distances
 
-# Algoritme TSP per determinar l'ordre de visita dels restaurants
-def tsp(locations: list, restaurant_distances: dict):
-    start = locations[0] # Seu
-    locations.pop(0) # Eliminar la seu de la llista de restaurants
-    n = len(locations)
-    all_points = list(range(n))
-    memo = {}
-
-    def visit(visited, last):
-        if visited == (1 << n) - 1:
-            return get_distance(restaurant_distances, locations[last], start)
-
-        if (visited, last) in memo:
-            return memo[(visited, last)]
-
-        min_dist = float('inf')
-        for point in all_points:
-            if visited & (1 << point) == 0:
-                dist = get_distance(restaurant_distances, locations[last], locations[point])
-                min_dist = min(min_dist, dist)
-
-        memo[(visited, last)] = min_dist
-        return min_dist
-
-    return visit(1, 0)
-
-
 def tsp2(locations: list, restaurant_distances: dict):
     start = locations[0]
     current = start
@@ -193,7 +166,7 @@ if __name__ == "__main__":
         for order in orders_by_restaurant[restaurant['id']]:
             print(f"    Comanda: {order['especialitat']}")
 
-    #plot_tsp_route(restaurant_order)
+    plot_tsp_route(restaurant_order)
 
 
     
