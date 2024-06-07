@@ -2,14 +2,17 @@ import json
 from itertools import permutations
 from geopy.distance import geodesic
 
+# Función para cargar datos JSON desde un archivo
 def load_json_array(filename):
     with open(str(filename) + '.json', 'r') as file:
         return json.load(file)[filename]
 
+# Cargar los datos de los archivos JSON
 restaurants = load_json_array('restaurants')
 orders = load_json_array('orders')
 specialities = load_json_array('specialities')
 
+# Crear un diccionario de especialidades para un acceso rápido
 specialities_dict = {s['especialitat']: s for s in specialities}
 
 # Afegir les dades de compromís i pes a les comandes
@@ -18,7 +21,7 @@ for order in orders:
     order['compromis'] = specialities_dict[especialitat]['compromis']
     order['pes'] = specialities_dict[especialitat]['pes']
 
-
+# Convertir las coordenadas de los restaurantes a tuplas de flotantes y agregar detalles adicionales
 for index, restaurant in enumerate(restaurants):
     especialitat = restaurant['especialitat']
     restaurant['coordenades'] = tuple(map(float, restaurant['coordenades'].split(", ")))
@@ -38,6 +41,7 @@ def calculate_all_distances(hub, locations):
                 store_distance(distances, loc1, loc2)
     return distances
 
+# Algoritmo para resolver el TSP
 def tsp2(locations: list, restaurant_distances: dict):
     start = locations[0]
     current = start
@@ -98,6 +102,7 @@ def knapsack(orders):
     
     return selected_orders
 
+# Función para seleccionar las órdenes por restaurante
 def select_orders_by_restaurant(restaurants, orders):
     # Seleccionar les comandes per cada restaurant
     orders_by_restaurant = {}
@@ -114,6 +119,7 @@ def select_orders_by_restaurant(restaurants, orders):
 def calculate_distance(coord1, coord2):
     return geodesic(coord1, coord2).kilometers
 
+# Función para almacenar la distancia entre dos localizaciones en un diccionario
 def store_distance(distances: dict, loc1, loc2):
     coord1 = loc1["coordenades"]
     coord2 = loc2["coordenades"]
@@ -121,11 +127,13 @@ def store_distance(distances: dict, loc1, loc2):
     distances[(coord2, coord1)] = distances[(coord1, coord2)]
     return distances
 
+# Función para obtener la distancia entre dos localizaciones desde un diccionario
 def get_distance(distances: dict, loc1, loc2):
     coord1 = loc1["coordenades"]
     coord2 = loc2["coordenades"]
     return distances[(coord1, coord2)]
 
+# Función para visualizar la ruta del TSP
 def plot_tsp_route(route):
     import matplotlib.pyplot as plt
     plt.figure(figsize=(10, 6))
